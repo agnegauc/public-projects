@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Plit</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="hero-container">
+      <section id="hero-left">
+        <header>
+          <img src="./images/plit-logo.png" alt="Plit logo" />
+        </header>
+        <h1>
+          Curb the chaos with <span>Plit</span>. Splitting bills has never been
+          <div id="text"></div>
+          <div id="cursor"></div>
+        </h1>
+        <form id="sign-form">
+          <label for="email">Email</label>
+          <input type="email" id="email-input" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password-input" required />
+
+          <button type="submit" class="white-button button">LOG IN</button>
+        </form>
+        <a href="./register.html">Don't have an account yet? Sign up here</a>
+        <!-- <a href="./login.html" class="white-button button">LOG IN</a> -->
+        <!-- <a href="./register.html" class="green-button button">REGISTER</a> -->
+      </section>
+      <section id="hero-right">
+        <img src="./images/friends.jpg" alt="Happy friends" />
+      </section>
+    </main>
+
+    <script type="module" src="./login.js"></script>
+  </body>
+</html>

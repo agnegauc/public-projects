@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bills</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-logo">
+        <img src="./images/mini-logo.png" alt="Plit logo" />
+      </div>
+      <div class="header-title">
+        <h4>Bills</h4>
+      </div>
+    </header>
+    <main>
+      <section class="list-section">
+        <div class="back-add-container">
+          <a href="./groups.html" class="img-text-container">
+            <img src="./images/left-arrow.svg" />
+            <p>Back to Groups</p>
+          </a>
+          <button class="button green-button no-margin-button">
+            Add new bill
+          </button>
+        </div>
+        <table id="bills-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Description</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </section>
+      <section class="form-section bill-form-section">
+        <h3>Add bill</h3>
+        <form id="add-bill-form">
+          <label for="amount">Amount:</label>
+          <input type="number" step="0.01" id="amount-input" required />
+
+          <label for="description">Description:</label>
+          <input id="description-input" required />
+
+          <button type="submit" class="button white-button">Add</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="./billsMain.js"></script>
+  </body>
+</html>

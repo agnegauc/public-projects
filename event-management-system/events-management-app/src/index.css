@@ -1,0 +1,10 @@
+html,
+body,
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-photo {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
